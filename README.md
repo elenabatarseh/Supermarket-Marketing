@@ -10,6 +10,7 @@ The goal of this analysis is to identify the key drivers of offer acceptance, su
 - [Data Sources](#data-sources)
 - [Exploratory Data Analysis ](#exploratory-data-analysis)
 - [Results](#results)
+- [Conclusions](#conclusions)
 
 ### Project Overview
 The purpose of this project is to analyze customer data and identify patterns in their response to marketing campaigns. The analysis focuses on:
