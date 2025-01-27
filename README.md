@@ -1,7 +1,7 @@
 # Supermarket Marketing for a Mempership Offer
 
 ## Abstract
-This exploratory data analysis (EDA) focuses on understanding customer behavior in response to a marketing campaign and identifying factors influencing their decisions. The superstore is preparing a year-end sale offering a Gold Membership at a discounted rate of $499 (original price: $999). The membership provides a 20% discount on all purchases and is exclusively available to existing customers through a targeted phone call campaign.
+This exploratory data analysis focuses on understanding customer behavior in response to a marketing campaign and identifying factors influencing their decisions. The superstore is preparing a year-end sale offering a Gold Membership at a discounted rate of $499 (original price: $999). The membership provides a 20% discount on all purchases and is exclusively available to existing customers through a targeted phone call campaign.
 
 The goal of this analysis is to identify the key drivers of offer acceptance, such as income, spending patterns across product categories, website visits, and total spending. By understanding these factors, the superstore can develop more effective marketing strategies and improve customer segmentation to maximize campaign success while minimizing costs. This approach will ensure resources are directed toward customers most likely to respond positively to the campaign.
 
