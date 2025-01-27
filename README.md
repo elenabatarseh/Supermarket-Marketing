@@ -76,10 +76,25 @@ A stacked column chart was created to show the proportion of customers who accep
 A series of pie charts was created in Power BI to visualize the proportion of spending in different product categories (Fish, Meat, Fruits, Sweets, Gold, and Wines) by membership offer response (Response = 1 for Accepted, Response = 0 for Not Accepted).
 
 ### Data Analysis
+
+##### Data Cleaning
 ``` R
 # Handle missing values (replace with median)
 store$Income[is.na(store$Income)] <- median(store$Income, na.rm = TRUE)
 ```
+
+##### Scatterplot of Total Spending vs Offer Acceptance
+``` R
+# Create a new variable for total spending
+store$TotalSpending <- store$MntFishProducts + store$MntMeatProducts + store$MntFruits + store$MntSweetProducts + store$MntWines + store$MntGoldProds
+
+# Scatter plot of total spending vs offer response
+ggplot(store, aes(x = TotalSpending, y = Response, color = as.factor(Response))) +
+  geom_jitter(alpha = 0.4) +
+  scale_color_manual(values = c("red", "green"), labels = c("Did Not Accept", "Accepted")) +
+  labs(title = "Total Spending vs Offer Acceptance", x = "Total Spending", y = "Offer Response (0 = No, 1 = Yes)")
+```
+
 
 ### Results
 The analysis results are summarized as follows:
