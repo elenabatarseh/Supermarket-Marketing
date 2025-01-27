@@ -58,22 +58,15 @@ EDA was conducted to answer key business questions:
 A bar chart was created in Power BI to compare the average income of customers who accepted vs. did not accept the offer.   
 Insight: Customers with higher income are slightly more likely to accept the offer.  
 
-2. Which product categories are most associated with offer acceptance?  
-A bar chart in Power BI showed average spending in each category for both groups (accepted vs. not accepted).  
-Insight: Spending on wines and meats showed the greatest differences between the two groups, with higher spenders being more likely to accept.  
+2. Is there a difference in acceptance rates based on education levels?
 
-3. Do customers who spend more in specific categories (e.g., Wine or Gold) tend to accept the offer more frequently?  
-A box plot was created to visualize spending on Wines and Gold Products for customers who accepted vs. did not accept the offer.  
-Insight: Customers with higher spending on wines and gold products were significantly more likely to accept the offer, indicating these categories are strong drivers of acceptance.  
-   
-4. Do website visits correlate with offer acceptance?  
-A box plot was created to compare the distribution of website visits between the two groups.  
-Insight: Customers who accepted the offer tend to visit the website more frequently.  
+3. Is there a relationship between total spending and the likelihood of accepting the offer?
 
-5. Does total spending influence offer acceptance?  
-A scatter plot was used to visualize the relationship between total spending and offer response.  
-Insight: Higher total spending correlates with a higher likelihood of accepting the offer.   
+4. Which purchase channel (Web, Store, Deal, or Catalog) shows the highest proportion of customers accepting the membership offer?
 
+5. Does the number of small children in a customer's household influence the likelihood of accepting the membership offer?
+
+6. How does spending across different product categories (e.g., Wines, Meat, Gold, etc.) vary between customers who accepted the membership offer and those who did not?
 
 ### Data Analysis
 ``` R
@@ -83,6 +76,7 @@ store$Income[is.na(store$Income)] <- median(store$Income, na.rm = TRUE)
 
 ### Results
 The analysis results are summarized as follows:
+
 
 
    
